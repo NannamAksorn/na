@@ -3,7 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to na's documentation!
+.. |br| raw:: html
+
+   <br />
+
+NA
 ==============================
 
 .. toctree::
@@ -11,10 +15,53 @@ Welcome to na's documentation!
    :caption: Contents:
 
 
-
-Indices and tables
+Table of Contents
 ==================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+
+Naming Convention
+==================
+
+***************
+CSS
+***************
+
+BEM - Block Element Modifier
+
+**Block:** Standalone entity `(card)` |br|
+**Element:** Part of a block `(image)` |br|
+**Modifier:** Flag on a block or element `(dark, disabled)` |br|
+
+.block__element--modifier |br|
+.block--modifier |br|
+
+
+Example
+^^^^^^^^^^^^^^^^^^^^^
+
+HTML
+
+.. code-block:: html
+
+    <div class="my-block my-block--state-good">
+        <img class="my-block__image--tall" />
+    </div>
+
+CSS
+
+.. code-block:: css
+
+    .my-block { ... }
+    .my-block--state-good { … }
+    .my-block__image--tall { … }  
+
+
+
+
+
+
+
